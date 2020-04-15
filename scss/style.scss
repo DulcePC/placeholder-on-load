@@ -1,0 +1,47 @@
+@import "placeholder.scss";
+
+h1 {
+    color: pink;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.mask {
+    position: relative;
+    @include placeholder-animation();
+}
+
+.component-wrapper {
+    border-radius: 20px;
+    margin-top: 40px;
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    padding: 30px;
+
+    .component-header {
+        display: flex;
+        align-items: center;
+
+        .media {
+            background-color: black;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin: 10px 30px 10px 0px;;
+        }
+
+        .info-card {
+
+            h5 {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .component-body {
+        margin-top: 30px;
+    }
+
+
+}
