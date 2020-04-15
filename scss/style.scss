@@ -8,9 +8,21 @@ h1 {
 
 .mask {
     position: relative;
-    @include placeholder-animation();
+    @include placeholder-animation-one-element();
 }
 
+.mask-all-element {
+    @include placeholder-animation-all-element();
+}
+
+.background-masker {
+    border: 1px solid black;
+    height: 100%;
+    background: white;
+    position: relative;
+    box-sizing: border-box;
+}
+  
 .component-wrapper {
     border-radius: 20px;
     margin-top: 40px;
@@ -18,6 +30,7 @@ h1 {
     height: 400px;
     background-color: white;
     padding: 30px;
+    position: relative;
 
     .component-header {
         display: flex;

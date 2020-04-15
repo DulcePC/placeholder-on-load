@@ -10,7 +10,7 @@ $animation-iteraction-infinite: infinite;
     }
 }
 
-@mixin placeholder-animation() {
+@mixin placeholder-animation-one-element() {
     &::after {
         content: "";
         position: absolute;
@@ -28,8 +28,22 @@ $animation-iteraction-infinite: infinite;
         background: #f6f7f8;
         width: 100%;
         height: 100%;
-        background: green;
-        background: linear-gradient(to right, green 8%, #dddddd 18%, green 33%);
-        z-index: 3;
+        background: #eeeeee;
+        background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
     }
+}
+
+@mixin placeholder-animation-all-element() {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: placeHolderShimmer;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-name: placeHolderShimmer;
+    background: #f6f7f8;
+    width: 100%;
+    height: 100%;
+    background: #eeeeee;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
 }
