@@ -6,56 +6,54 @@ body {
 }
 
 h1 {
-    color: pink;
-    text-transform: uppercase;
-    font-weight: bold;
+	color: pink;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .mask {
-    position: relative;
-    @include placeholder-animation-one-element();
+	position: relative;
+	@include placeholder-animation-one-element();
 }
 
 .mask-all-element {
-    @include placeholder-animation-all-element();
+	@include placeholder-animation-all-element();
 }
 
 .description-title-placeholder {
-    background-color: yellow;
-    font-size: 20px;
-    height: 100px;
-    margin-top: 30px;
+	background-color: yellow;
+	font-size: 20px;
+	height: 100px;
+	margin-top: 30px;
 }
   
 .component-wrapper {
-    border-radius: 20px;
-    height: 400px;
-    background-color: white;
-    padding: 30px;
-    position: relative;
+	border-radius: 20px;
+	height: 400px;
+	background-color: white;
+	padding: 30px;
+	position: relative;
 
-    .component-header {
-        display: flex;
-        align-items: center;
+	.component-header {
+		display: flex;
+		align-items: center;
 
-        .media {
-            background-color: black;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            margin: 10px 30px 10px 0px;;
-        }
+		.media {
+			background-color: black;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			margin: 10px 30px 10px 0px;
+		}
 
-        .info-card {
+		.info-card {
+			h5 {
+				margin-bottom: 0px;
+			}
+		}
+	}
 
-            h5 {
-                margin-bottom: 0px;
-            }
-        }
-    }
-
-    .component-body {
-        margin-top: 30px;
-    }
-
+	.component-body {
+		margin-top: 30px;
+	}
 }
