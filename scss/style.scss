@@ -1,4 +1,9 @@
 @import "placeholder.scss";
+@import "simulating-html-classes.scss";
+
+body {
+    background-color: black;
+}
 
 h1 {
     color: pink;
@@ -15,18 +20,15 @@ h1 {
     @include placeholder-animation-all-element();
 }
 
-.background-masker {
-    border: 1px solid black;
-    height: 100%;
-    background: white;
-    position: relative;
-    box-sizing: border-box;
+.description-title-placeholder {
+    background-color: yellow;
+    font-size: 20px;
+    height: 100px;
+    margin-top: 30px;
 }
   
 .component-wrapper {
     border-radius: 20px;
-    margin-top: 40px;
-    width: 600px;
     height: 400px;
     background-color: white;
     padding: 30px;
@@ -55,6 +57,5 @@ h1 {
     .component-body {
         margin-top: 30px;
     }
-
 
 }

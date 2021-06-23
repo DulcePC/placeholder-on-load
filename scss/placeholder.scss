@@ -2,12 +2,12 @@ $animation-duration: 1s;
 $animation-iteraction-infinite: infinite;
 
 @keyframes placeHolderShimmer {
-    0% {
-      background-position: -468px 0
-    }
-    100% {
-      background-position: 468px 0
-    }
+  0% {
+    background-position: -468px 0
+  }
+  100% {
+    background-position: 468px 0
+  }
 }
 
 @mixin placeholder-animation-one-element() {
@@ -34,16 +34,12 @@ $animation-iteraction-infinite: infinite;
 }
 
 @mixin placeholder-animation-all-element() {
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-name: placeHolderShimmer;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-    animation-name: placeHolderShimmer;
-    background: #f6f7f8;
-    width: 100%;
-    height: 100%;
-    background: #eeeeee;
+	  animation-duration: 3s;
+	  animation-fill-mode: forwards;
+	  animation-iteration-count: infinite;
+	  animation-name: placeHolderShimmer;
+	  animation-timing-function: linear;
     background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: cover;
+	  position: relative;
 }

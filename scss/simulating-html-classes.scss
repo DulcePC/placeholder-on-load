@@ -1,0 +1,17 @@
+.cards-items-center {
+  width: 100%;
+  height: 290px;
+
+  .background-masker {
+    background: #fff;
+    position: absolute;
+    transform: translate(50%);
+    right: 50%;
+    top: 50%;
+  }
+
+  .center-header {
+    width: 257px;
+    height: 36px;
+  }
+}
